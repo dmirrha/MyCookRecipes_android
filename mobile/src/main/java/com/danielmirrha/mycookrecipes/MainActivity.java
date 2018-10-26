@@ -30,9 +30,8 @@ public class MainActivity extends AppCompatActivity {
         floatingActionButton1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //TODO something when floating action menu first item clicked
-            Intent i = new Intent(MainActivity.this, SplashScreen.class);
+            Intent i = new Intent(MainActivity.this, newrecipe.class);
             startActivity (i);
-            finish();
             }
         });
         floatingActionButton2.setOnClickListener(new View.OnClickListener() {
