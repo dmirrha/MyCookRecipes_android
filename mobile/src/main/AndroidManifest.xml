@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.danielmirrha.mycookrecipes">
 
     <application
@@ -8,7 +9,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight">
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,12 +20,14 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="Seu Feed" />
+            android:label="@string/title_activity_main" />
         <activity
             android:name=".newrecipe"
-            android:label="@string/title_activity_newrecipe">
-
-        </activity>
+            android:label="@string/title_activity_newrecipe"></activity>
+        <activity
+            android:name=".Receitas"
+            android:label="@string/title_activity_receitas"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
